@@ -15,6 +15,7 @@ module.exports = class extends Component {
         const columnCount = Widgets.getColumnCount(config.widgets, config, page);
 
         return <html lang={language ? language.substr(0, 2) : ''}>
+            <script src="https://cdn.jsdelivr.net/gh/noitalihinna/live2d-widget@1.0.1/autoload.js"></script>
             <Head site={site} config={config} helper={helper} page={page} />
             <body class={`is-${columnCount}-column`}>
                 <Navbar config={config} helper={helper} page={page} />
