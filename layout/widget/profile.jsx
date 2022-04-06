@@ -76,6 +76,8 @@ class Profile extends Component {
                     <a class="level-item button is-primary is-rounded" href={followLink} target="_blank" rel="noopener">{followTitle}</a>
                 </div> : null}
                 {socialLinks ? this.renderSocialLinks(socialLinks) : null}
+                <iframe frameBorder="no" border="0" marginWidth="0" marginHeight="0" height={50} width="100%"
+                        src="//music.163.com/outchain/player?type=2&id=534065323&auto=0&height=32"/>
             </div>
         </div>;
     }
